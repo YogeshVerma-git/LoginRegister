@@ -35,10 +35,11 @@ public class Loginservlet extends HttpServlet {
        if (userDao.isValidUser(username, password)) {
           HttpSession session = request.getSession();
          session.setAttribute("username", username);
-         response.sendRedirect("welcome.jsp");
+         response.sendRedirect("fluff.jsp");
+       }
 //            //System.out.println("Hi - "+username);
-//        if (username.equals("shiv")) {
-//        	response.sendRedirect("welcome.jsp");
+        else if (username.equals("luv")&& password.equals("admin")) {
+        	response.sendRedirect("Afluff.jsp");
        } else {
             response.sendRedirect("login.jsp?error=1");
         	System.out.println("Error A gya");

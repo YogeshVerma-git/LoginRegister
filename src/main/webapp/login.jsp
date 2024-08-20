@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <title>Login</title>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -13,9 +15,9 @@
 <h1>Login</h1>
 <form action="Loginservlet" method="post">
 <label for="username">Username:</label>
-<input type="text" id="username" name="username" required><br>
+<input type="text" id="username" class="input-box" name="username" required><br>
 <label for="password">Password:</label>
-<input type="password" id="password" name="password" required><br>
+<input type="password" id="password" class="input-box" name="password" required><br>
  <button type="submit">Login</button>
  
 </form>
